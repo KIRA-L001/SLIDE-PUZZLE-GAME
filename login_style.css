@@ -148,7 +148,7 @@ html,body{
     height: 100px;
     width: 300px;
     margin-left: 60px;
-    margin-top: 70px;
+    margin-top: 8vh;
     --flow-space: 0.5em;
     --hsl: var(--hue), var(--saturation), var(--lightness);
     flex: 1 1 14rem;
@@ -462,3 +462,75 @@ html,body{
     position: relative;
     font-weight: 600;
    }
+   @media(max-width: 650px){
+    .page{
+        width: 100vw;
+        height: 80vh;
+        background: #232323;
+        border-radius: 30px;
+        box-shadow: 0 50px 70px #000000;
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+  }
+  @media(max-width: 1000px){
+    .leftPart h1{
+      color: #979696;
+      font-family: "moonhouse";
+      font-size: 10vh;
+      margin: 0px -100px;
+  }
+  .card {
+    height: 100px;
+    width: 300px;
+    margin-left: -100px;
+    margin-top: 70px;
+    --flow-space: 0.5em;
+    --hsl: var(--hue), var(--saturation), var(--lightness);
+    flex: 1 1 14rem;
+    padding: 1.5em 2em;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.35em;
+    color: #979696;
+    background-color: #2b2b2b;
+    border: 1px solid #eceff133;
+    border-radius: 15px;
+  }
+  .bLeft button{
+    margin: 0 -100px;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.541);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   .bRight button {
+    margin-left: 150px;
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 2px solid #979696;
+    background: #232323;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+    color: #979696;
+   }
+  }
