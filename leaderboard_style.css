@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 80px whitesmoke, inset 20px 0 80px rgba(255, 0, 255, 0.747),
+    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page{
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    background: #232323;
+    border-radius: 30px;
+    box-shadow: 0 50px 70px #000000;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+.page::-webkit-scrollbar {
+    width: 0.1rem;
+  }
+   
+.page::-webkit-scrollbar-track {
+    box-shadow: 0;
+  }
+   
+.page::-webkit-scrollbar-thumb {
+    background-color:transparent;
+  }
+.nav{
+    margin-top: -80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.leftItems{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 74px;
+}
+.rightItems{
+    gap: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav button {
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 2px solid #979696;
+    background: #232323;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+    color: #979696;
+   }
+   
+   .nav   button:before, button:after {
+    content: "";
+    position: absolute;
+    background: #232323;
+    transition: all .2s linear;
+   }
+   
+   .nav  button:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+   }
+   
+   .nav  button:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+   }
+   
+ .nav  button:hover {
+    cursor: crosshair;
+   }
+   
+   .nav button:active {
+    transform: scale(0.95);
+   }
+   
+   .nav button:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+   }
+   
+  .nav button:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+   }
+   
+   .nav button a {
+    cursor: crosshair;
+    color: #979696;
+    text-decoration: none;
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+   }
+   .logo img{
+    width: 70px;
+    margin-top: 10px;
+}
+.heading{
+    margin-top: -40px;
+    margin-left:20vw;
+    width: 40vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:12px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0),
+             -10px -10px 20px rgb(66, 66, 66);
+}
+.heading h1{
+    font-family: "moonhouse";
+    font-size: 3.5vw;
+    color: #979696;
+}
+.leaderboard{
+    margin-top: -130px;
+    margin-left:20vw;
+    width: 40vw;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.leaderboard h1{
+    font-family: "moonhouse";
+    font-size: 4vw;
+}
+.leaderboard .first{
+    width: 40vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:12px;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0),
+             -10px -10px 20px rgb(66, 66, 66);
+    color: #ecd400;
+    text-shadow: 0px 0px 100px #ecd4009e;
+}
+.leaderboard .second{
+    width: 40vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:12px;
+    box-shadow: 5px 0px 20px rgb(0, 0, 0),
+             -10px -0px 20px rgb(66, 66, 66);
+    color: #979696;
+    text-shadow: 0px 0px 100px #979797;
+}
+.leaderboard .third{
+    width: 40vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius:12px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0),
+             -10px -0px 20px rgb(66, 66, 66);
+    color: #220000;
+    text-shadow: 0px 0px 100px #6b0c0c;
+}
