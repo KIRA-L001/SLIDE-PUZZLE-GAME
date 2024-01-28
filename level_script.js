@@ -23,32 +23,32 @@ function game5(){
     window.location.href = "index5.html";
 }
 function game6(){
-    window.location.href = "index6.html";
+    window.location.href = "index1.html";
 }
 function game7(){
-    window.location.href = "index7.html";
+    window.location.href = "index2.html";
 }
 function game8(){
-    window.location.href = "index8.html";
+    window.location.href = "index3.html";
 }
 function game9(){
-    window.location.href = "index9.html";
+    window.location.href = "index4.html";
 }
 function game10(){
-    window.location.href = "index10.html";
+    window.location.href = "index5.html";
 }
 function game11(){
-    window.location.href = "index11.html";
+    window.location.href = "index1.html";
 }
 function game12(){
-    window.location.href = "index12.html";
+    window.location.href = "index2.html";
 }
 function game13(){
-    window.location.href = "index13.html";
+    window.location.href = "index3.html";
 }
 function game14(){
-    window.location.href = "index14.html";
+    window.location.href = "index4.html";
 }
 function game15(){
-    window.location.href = "index15.html";
+    window.location.href = "index5.html";
 }
