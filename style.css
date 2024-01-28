@@ -193,3 +193,14 @@ html,body{
     box-shadow: 15px 15px 30px rgb(0, 0, 0),
              -15px -15px 30px rgb(66, 66, 66);
 }
+@media(max-width: 650px){
+    .page{
+        width: 100vw;
+        height: 80vh;
+        background: #232323;
+        border-radius: 30px;
+        box-shadow: 0 50px 70px #000000;
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+}
