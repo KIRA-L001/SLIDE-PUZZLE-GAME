@@ -159,3 +159,17 @@ html,body{
     inset 15px 15px 30px rgb(25, 25, 25),
     inset -15px -15px 30px rgb(60, 60, 60);
 }  
+@media(max-width:585px) {
+    .box button{
+        margin: 17.6% 28px;
+        position: relative;
+        width: 100px;
+        height:100px;
+        background-color:var(--darkcol);
+        border-radius:12px;
+        box-shadow: 15px 15px 30px rgb(0, 0, 0),
+                 -15px -15px 30px rgb(66, 66, 66);
+        border: none;
+        
+    }
+}
